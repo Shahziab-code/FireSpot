@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FireSpot - Web Player: Music for All</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      .left {
+        color: white;
+      }
+      .right {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- This is the whole Container of the webpage -->
+    <div class="container flex bg-b">
+      <div class="left">
+        <i id="closebtn" class="fa-solid fa-xmark"></i>
+        <!-- Home box Starts form here -->
+        <div class="home bg-dark rounded p-1">
+          
+          <li class="logoFireSpot">
+            <img
+              src="components/22652983-removebg-preview.png"
+              width="50px"
+              height="50px"
+              alt="FireSpot"
+            />FireSpot
+          </li>
+          <li><i class="fa-solid fa-house"></i> Home</li>
+          <li><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+        </div>
+        <!-- The library Box Starts from here -->
+        <div class="library bg-dark rounded p-1">
+          <div class="heading flex p-1">
+            <i class="fa-solid fa-headphones"></i>
+            <h3>Your Library</h3>
+          </div>
+          <div class="songlist">
+            <ul>
+            </ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="Legal"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="Privecy-Center"><span>Privecy Center</span></a>
+            </div>
+            <div>
+              <a href="Privecy-Policy"><span>Privecy Policy</span></a>
+            </div>
+            <div>
+              <a href="Cookies"><span>Cookies</span></a>
+            </div>
+            <div>
+              <a href="About-Us"><span>About Us</span></a>
+            </div>
+            <div>
+              <a href="Assecibility"><span>Assecibility</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- This is where the right view box of the webpage  -->
+      <div class="right rounded bg-dark">
+        <div class="header flex bg-gray">
+          <div class="nav">
+            <i id="hammburger" class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="botton">
+            <button class="signupbtn">Sign Up</button>
+            <button class="loginbtn">Log In</button>
+          </div>
+        </div>
+        <!-- This is Music List container, contains the name of website and cards of songs -->
+        <div class="FireSpot">
+          <h2>Fire Spot Playlist</h2>
+          <div class="cardcontainer">          </div>
+          <!-- This is Song Play Bar -->
+          <div class="playbar">
+            <div class="seekbar"></div>
+            <div class="circle"></div>
+            <div class="songinfo"></div>
+
+            <div class="songbtns">
+              <i id="previous" class="fa-solid fa-backward-step"></i>
+              <i id="play" class="fa-solid fa-play"></i>
+              <i id="pause" class="fa-solid fa-pause"></i> <!-- Fixed icon -->
+              <i id="next" class="fa-solid fa-forward-step"></i>
+            </div>
+          <div class="timeval">
+            <div class="songtime"></div>
+            <div class="volume"><i id="volume" class="fa-solid fa-volume-high" style="color: black;"></i>
+                                <i id="mute" class="fa-solid fa-volume-xmark" style="color: black;"></i>
+                  <div class="range">
+                    <input type="range" name="volume" id="">
+                  </div>
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
